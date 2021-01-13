@@ -6,69 +6,153 @@
     <title>IDAssignment2</title>
 
     <link rel="stylesheet" type="text/css" href="./style.css" />
-    <script src="./index.js"></script>
+
+    <!-- Bootstrap core CSS -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
     <!--<link rel="stylesheet" href="Normalize.css">-->
     <link rel="stylesheet" href="Normalize2.css">
+
+    <style>
+        .bd-placeholder-img {
+          font-size: 1.125rem;
+          text-anchor: middle;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none;
+        }
+  
+        @media (min-width: 768px) {
+          .bd-placeholder-img-lg {
+            font-size: 3.5rem;
+          }
+        }
+      </style>
+      
 </head>
 <body>
     <header>
-        <p class="navbar-name">SG&nbspVirus&nbspAlert</p>
+        <p class="website-name">SG&nbsp;Viral&nbsp;Alert</p>
     </header>
-    
-        <ul class="nav nav-tabs navbar-expand-lg" id="myTab">
-            <li><a class="nav-item nav-link rounded-0 active" id="nav-covid-tab" data-toggle="tab" href="#nav-covid" role="tab" aria-controls="nav-covid" aria-selected="true">Covid</a></li>
-            <li><a class="nav-item nav-link rounded-0" id="nav-dengue-tab" data-toggle="tab" href="#nav-dengue" role="tab" aria-controls="nav-dengue" aria-selected="false">Dengue</a></li>
+
+    <!--<nav>
+        <ul class="nav nav-tabs navbar-expand-lg" id="nav-tab" role="tablist">
+          <li><a class="nav-link active" id="nav-covid-tab" data-bs-toggle="tab" href="#nav-covid" role="tab" aria-controls="nav-covid" aria-selected="true">Covid</a></li>
+          <li><a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a></li>
         </ul>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade active show" id="nav-covid" role="tabpanel" aria-labelledby="nav-covid-tab">
+          <div class="covid-news">
+              <div id="covid-map">
+                  <iframe id="iFrameId" width="100%" height="100%" src="https://infographics.channelnewsasia.com/covid-19/singapore-map.html" frameBorder="0"> </iframe>
+              </div>
+              <div class="covid-article-header">
+                  <p>Latest News on Covid</p>
+              </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+          <p>Nulla est ullamco ut irure incididunt nulla Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore cillum sint adipisicing exercitation ipsum. Nostrud ut anim non exercitation velit laboris fugiat cupidatat. Commodo esse dolore fugiat sint velit ullamco magna consequat voluptate minim amet aliquip ipsum aute laboris nisi. Labore labore veniam irure irure ipsum pariatur mollit magna in cupidatat dolore magna irure esse tempor ad mollit. Dolore commodo nulla minim amet ipsum officia consectetur amet ullamco voluptate nisi commodo ea sit eu.</p>
+        </div>
+      </div>-->
+
+
+    <nav>
+        <ul class="nav nav-tabs navbar-expand-lg" id="nav-tab" role=tablist>
+            <li><a class="nav-item nav-link rounded-0 active" id="nav-covid-tab" data-bs-toggle="tab" href="#nav-covid" role="tab" aria-controls="nav-covid" aria-selected="true">Covid</a></li>
+            <li><a class="nav-item nav-link rounded-0" id="nav-dengue-tab" data-bs-toggle="tab" href="#nav-dengue" role="tab" aria-controls="nav-dengue" aria-selected="false">Dengue</a></li>
+        </ul>
+    </nav>
+
+
+
+
             <div class="tab-content" id="nav-tabContent">
-            <div class="tab-pane fade show active" id="nav-covid" role="tabpanel" aria-labelledby="nav-covid-tab">
-                <div id="map">
-                    <iframe width="100%" height="100%" src="https://data.gov.sg/dataset/sla-cadastral-land-parcel/resource/60f3d2ca-e058-4a7a-9dbc-5b7df2d9cd19/view/717a0699-0b2e-44f1-8b9c-d7e349668cf0" frameBorder="0"> </iframe>
-                </div>
-                <div class="covid-news">
-                    <div class="article-header-covid">
-                        <p>Latest News on Covid</p>
+                <div class="tab-pane fade active show" id="nav-covid" role="tabpanel" aria-labelledby="nav-covid-tab">
+                    <div id="covid-map">
+                        <iframe src="https://infographics.channelnewsasia.com/covid-19/singapore-map.html"></iframe>
                     </div>
-                        <div>
-                            <article class="article-zero-covid">
-                                <div class="article-zero-covid-pic">
-                                    <img src="pictures/img_placeholder.jpg" alt="placeholder">
-                                </div>
-
-                                <div class="article-zero-covid-name">
-                                    <p>news article one</p>
-                                </div>
-                            </article>
-                            <article class="article-one-covid">
-                                <div class="article-one-covid-pic">
-                                    <img src="pictures/img_placeholder.jpg" alt="placeholder">
-                                </div>
-
-                                <div class="article-one-covid-name">
-                                    <p>news article two</p>
-                                </div>
-                            </article>
-                            <div class="article-two-covid">
-                                
-                            </div>
-                            <div class="article-three-covid">
-                                
-                            </div>
-                            <div class="article-four-covid">
-                                
-                            </div>
-                            <div class="article-five-covid">
-                                
-                            </div>
+                    <div class="covid-news">
+                        <div class="covid-article-header">
+                            <p>Latest News on Covid</p>
                         </div>
                         
-                </div>
-            </div>
-
+                            <div class="row row-eq-height row-cols-1 row-cols-sm-2 row-cols-md-6 g-3 px-3 my-3" id="article-container">
+                                
+                                <article class="row-eq-height col-zero">
+                                    <div class="card shadow-sm">
+                                        <img class="covid-zero-img" src="pictures/img_placeholder.jpg" alt="placeholder">
+                                        <div class="card-body">
+                                            <h6><a class="covid-zero-title" href=""></a></h6>
             
-            <div class="tab-pane fade" id="nav-dengue" role="tabpanel" aria-labelledby="nav-dengue-tab">
+                                        </div>
+                                    </div>
+                                </article>
 
-            </div>
+                                <article class="row-eq-height col-one">
+                                    <div class="card shadow-sm">
+                                        <img class="covid-one-img" src="pictures/img_placeholder.jpg" alt="placeholder">
+                                        <div class="card-body">
+                                            <a class="covid-one-title" href="" target="_blank"></a>
+
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="row-eq-height col-two">
+                                    <div class="card shadow-sm">
+                                        <img class="covid-two-img" src="pictures/img_placeholder.jpg" alt="placeholder">
+                                        
+                                        <div class="card-body">
+                                            <a class="covid-two-title" href="" target="_blank"></a>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="row-eq-height col-three">
+                                    <div class="card shadow-sm">
+                                        <img class="covid-three-img" src="pictures/img_placeholder.jpg" alt="placeholder">
+                                        
+                                        <div class="card-body">
+                                            <h6><a class="covid-three-title" href="" target="_blank"></a></h6>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="row-eq-height col-four">
+                                    <div class="card shadow-sm">
+                                        <img class="covid-four-img" src="pictures/img_placeholder.jpg" alt="placeholder">
+                                        
+                                        <div class="card-body">
+                                            <h6><a class="covid-four-title" href="" target="_blank"></a></h6>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="row-eq-height col-five">
+                                    <div class="card shadow-sm">
+                                        <img class="covid-five-img" src="pictures/img_placeholder.jpg" alt="placeholder">
+                                        
+                                        <div class="card-body">
+                                            <h6><a class="covid-five-title" href="" target="_blank"></a></h6>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                            <div class="tab-pane fade" id="nav-dengue" role="tabpanel" aria-labelledby="nav-dengue-tab">
+                                <div id="dengue-map" class="resource-view map-view">
+          
+                                    <iframe height="100%" width=100% src="https://data.gov.sg/dataset/dengue-clusters/resource/801ce5ce-fb99-4211-94fe-9d8ca5e182d4/view/07e4bfc9-8675-4534-959f-768be06aeeab"></iframe>
+                                  
+                                </div>                            
+                            </div>
+                        </div>-->
+
+                
 
 
      <footer class="footer">
@@ -81,7 +165,80 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 
-   
-
 </body>
 </html>
+
+        <!--<nav>
+            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+              <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+              <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</a>
+              <a class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade active show" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div id="map">
+                    <iframe width="100%" height="100%" src="https://data.gov.sg/dataset/sla-cadastral-land-parcel/resource/60f3d2ca-e058-4a7a-9dbc-5b7df2d9cd19/view/717a0699-0b2e-44f1-8b9c-d7e349668cf0" frameBorder="0"> </iframe>
+                </div>
+                    <div class="covid-news">
+                        <div class="article-header-covid">
+                            <p>Latest News on Covid</p>
+                        </div>
+                    </div>
+                    <article class="col-0">
+                        <div class="card shadow-sm">
+                            <img class="covid-zero-img" src="pictures/img_placeholder.jpg" alt="placeholder" width="100%" height="225">
+                            <div class="card-body">
+                                <a class="covid-zero-title" href=""></a>
+
+                            </div>
+                        </div>
+                    </article>        
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+              <p>Nulla est ullamco ut irure incididunt nulla Lorem Lorem minim irure officia enim reprehenderit. Magna duis labore cillum sint adipisicing exercitation ipsum. Nostrud ut anim non exercitation velit laboris fugiat cupidatat. Commodo esse dolore fugiat sint velit ullamco magna consequat voluptate minim amet aliquip ipsum aute laboris nisi. Labore labore veniam irure irure ipsum pariatur mollit magna in cupidatat dolore magna irure esse tempor ad mollit. Dolore commodo nulla minim amet ipsum officia consectetur amet ullamco voluptate nisi commodo ea sit eu.</p>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+              <p>Sint sit mollit irure quis est nostrud cillum consequat Lorem esse do quis dolor esse fugiat sunt do. Eu ex commodo veniam Lorem aliquip laborum occaecat qui Lorem esse mollit dolore anim cupidatat. Deserunt officia id Lorem nostrud aute id commodo elit eiusmod enim irure amet eiusmod qui reprehenderit nostrud tempor. Fugiat ipsum excepteur in aliqua non et quis aliquip ad irure in labore cillum elit enim. Consequat aliquip incididunt ipsum et minim laborum laborum laborum et cillum labore. Deserunt adipisicing cillum id nulla minim nostrud labore eiusmod et amet. Laboris consequat consequat commodo non ut non aliquip reprehenderit nulla anim occaecat. Sunt sit ullamco reprehenderit irure ea ullamco Lorem aute nostrud magna.</p>
+            </div>
+          </div>-->
+
+
+                                      <!--<article class="col-1">
+                            <div class="card shadow-sm">
+                                <img class="covid-one-img" src="pictures/img_placeholder.jpg" alt="placeholder" width="100%" height="225">
+                                <div class="card-body">
+                                    <a class="covid-one-title" href=""></a>
+
+                                </div>
+                            </div>
+                            </article>
+
+                    
+                            <article class="col-3">
+                            <div class="card shadow-sm">
+                                <img class="covid-three-img" src="pictures/img_placeholder.jpg" alt="placeholder" width="100%" height="225">
+                                
+                                <div class="card-body">
+                                    <a class="covid-three-title" href=""></a>
+                                </div>
+                            </div>
+                            </article>
+                            <article class="col-4">
+                            <div class="card shadow-sm">
+                                <img class="covid-four-img" src="pictures/img_placeholder.jpg" alt="placeholder" width="100%" height="225">
+                                
+                                <div class="card-body">
+                                    <a class="covid-four-title" href=""></a>
+                                </div>
+                            </div>
+                            </article>
+                            <article class="col-5">
+                            <div class="card shadow-sm">
+                                <img class="covid-five-img" src="pictures/img_placeholder.jpg" alt="placeholder" width="100%" height="225">
+                                
+                                <div class="card-body">
+                                    <a class="covid-five-title" href=""></a>
+                                </div>
+                            </div>
+                            </article>-->
