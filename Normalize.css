@@ -351,8 +351,35 @@
 
 
   /*CSS code*/
+  /*sign in css*/
+  #signin_page{
+    background-color: #1E2B33 ;
+  }
+
+
+  #signin_page_container{
+    margin-top: 30%;
+    margin-bottom: 45% ;
+  }
+
+  #login-title{
+      color: #ffffff;
+      font-size: 120px;
+      text-align: center;
+      position: relative;
+      bottom: 260px;
+  }
+
+  #app_icon_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    
+  }
+
   #form{
-      margin: 100px ;
+      margin: 140px ;
       display: flex;
       flex-direction: column;
     
@@ -367,9 +394,11 @@
     
   }
 
-  #username::-webkit-input-placeholder { /* Edge */
-    padding-left: 100px;
+  #username:focus {
+      outline: 0;
+      box-shadow: 0 0 50px #7E0000;
   }
+
 
   #password{
     border-radius: 100px;
@@ -380,9 +409,12 @@
 
   }
 
-  #password::-webkit-input-placeholder { /* Edge */
-    padding-left: 100px;
-  }
+  #password:focus {
+    outline: 0;
+    box-shadow: 0 0 50px #7E0000;
+}
+
+
 
   #login{
     border-radius: 100px;
@@ -390,11 +422,82 @@
     height: 250px;
     margin-top: 100px;
     border-width: 7px;
-  }
-
-  #login { /* Edge */
     padding: 50px;
     width: 500px;
-    margin-left: 25%;
-    
   }
+
+ #button-container{
+     display: flex;
+     justify-content: center;
+ }
+
+
+/*homepage css*/
+ #homepage{
+  background-color: #1E2B33;
+ }
+
+ .setting_gear{
+   width: 350px;
+   height: 350px;
+   position: absolute;
+   margin-left: 1250px ;
+   margin-top: -180px ;
+ }
+
+ p{
+  color:#ffffff
+ }
+
+ #points{
+   font-size: 100px;
+ }
+
+ #news_search_api_title{
+   margin: 0;
+   font-size: 80px ;
+   background-color: #7E0000;
+ }
+
+ .covid-zero-title{
+   font-size: 80px;
+   color: #ffffff;
+   
+ }
+
+ .covid-zero-title:link{
+  font-size: 80px;
+  color: #ffffff;
+  text-decoration: none;
+ }
+
+ .covid-zero-img{
+   width:100%;
+   margin-top: -15%;
+ }
+
+ .covid-one-title{
+  font-size: 80px;
+  color: #ffffff;
+  
+}
+
+.covid-one-title:link{
+ font-size: 80px;
+ color: #ffffff;
+ text-decoration: none;
+}
+
+.covid-one-img{
+  width:100%;
+  margin-top: -15%;
+}
+
+ #crop {
+  height: 500px;
+  overflow: hidden;
+
+}
+
+ 
+
